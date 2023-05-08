@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Success!</h1>
+{% if data %}
+<ul>
+    {% for item in data %}
+    <li>{{ item.input_field }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No data yet.</p>
+{% endif %}
+{% endblock %}
